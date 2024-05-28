@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <script src="/main.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="sub-page" id="sub-page">
+      <div class="illustration">
+        <img src="/assets/images/illustration-sign-up-mobile.svg" alt="">
+      </div>
+      <!-- Sign-up form start -->
+      <div class="content">
+        <h1>Stay updated!</h1>
+
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul>
+          <li><i class='bx bxs-check-circle bx-sm'></i>Product discovery and building what matters</li>
+          <li><i class='bx bxs-check-circle bx-sm'></i>Measuring to ensure updates are a success</li>
+          <li><i class='bx bxs-check-circle bx-sm'></i>And much more!</li>
+        </ul>
+        <form novalidate name="subscribe" id="form" action="#" onsubmit="return handleSubscription()">
+          <div class="label-error">
+            <label for="email">Email address</label>
+            <p id="error-msg"></p>
+          </div>
+          <input type="text" name='email' id="email" placeholder="email@company.com">
+          <button type="submit" class="default-button" id="subscribe">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <!-- Sign-up form end -->
+
+    </div>
+    <div class="success hide" id="success">
+      <!-- Success message start -->
+      <div class="message">
+        <div class="success_img">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+            <defs>
+              <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#FF6A3A" />
+                <stop offset="100%" stop-color="#FF527B" />
+              </linearGradient>
+            </defs>
+            <g fill="none">
+              <circle cx="32" cy="32" r="32" fill="url(#a)" />
+              <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285" />
+            </g>
+          </svg>
+        </div>
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+          Please open it and click the button inside to confirm your subscription.</p>
+
+      </div>
+
+      <button class="default-button" id="dismiss">Dismiss message</button>
+    </div>
+  </main>
+
+  <!-- Success message end -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
