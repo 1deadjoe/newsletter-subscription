@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/1deadjoe/newsletter-subscription.git))
+- Live Site URL: [Live Site](https://newsletter-subscription.vercel.app/)
 
 ## My process
 
